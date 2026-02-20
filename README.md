@@ -56,7 +56,7 @@ Reference repository:
 spike --version
 iverilog -V </pre>
 ![Screenshot for verification](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/84c699795e6dd21253bf277039282b4d9cd1fe07/images/Setup_verification.png)
-* The codespace is build without successfully any errors ans issues.
+* The codespace is build without successfully any errors and issues.
 * This ensured a known-good, reproducible development baseline.
 
 ---
@@ -64,16 +64,35 @@ iverilog -V </pre>
 ### Step 2 — RISC-V Reference Bring-Up
 
 * Followed repository README instructions
-* Compiled provided RISC-V firmware
+* Compiled provided RISC-V firmware using command
+  <pre>riscv64-unknown-elf-gcc -o sum1ton.o sum1ton.c</pre>
+*  Run it with spike:
+   <pre>spike pk sum1ton.o</pre>
 * Executed the program successfully
-* Verified console output
+* Verified console output on VS code
+  ![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/7831ba60aa18831c3334bf2bd738116990f8796f/images/RISCV_reference_program.png)
+  
+  ## Exploring GUI Desktop(noVNC)
+  ### Navigate the sample programs
+  <pre>cd /workspaces/vsd-riscv2
+  cd samples
+  ls -ltr</pre>
+  ### Compiled and executed the same program USing Native GCC(x86)
+  <pre>gcc sum1ton.c
+   ./a.out</pre>
+   ### Compile and Run using RISC-V GCC and Spike
+  <pre>riscv64-unknown-elf-gcc -o sum1ton.o sum1ton.c
+  spike pk sum1ton.o</pre>
+![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/7831ba60aa18831c3334bf2bd738116990f8796f/images/riscv_refernce_program_novnc.png)
+
+### In the image below the value of n is changed to 14 and executed to verify:
+![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/7831ba60aa18831c3334bf2bd738116990f8796f/images/riscv_refernce_program_novnc1.png)
 
 This confirmed:
 
 * Working toolchain
 * Correct compilation flow
 * Proper runtime behavior
-![]()
 ---
 
 ### Step 3 — VSDFPGA Labs Integration
