@@ -100,6 +100,9 @@ This confirmed:
 * Cloned `vsdfpga_labs` inside same Codespace
 * Built basic labs not requiring FPGA hardware
 * Verified successful execution via logs/simulation
+* Review the RISC-V logo code
+  ![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/9c2378b616345d75f365fc57ecae0bd9569760fb/images/vsdfpga_labs_code.png)
+  ![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/9c2378b616345d75f365fc57ecae0bd9569760fb/images/vsdfpga_labs_review_riscv_logo_output.png)
 
 This validated:
 
@@ -108,7 +111,16 @@ This validated:
 * Preparation for SoC-level development
 
 ---
+### Step4 - Local Machine Preparation
+* This step is mainly focused on setting up local development environment as FPGA board will require local execution.
+* Clone both repositories locally and install required tools for local execution.
+![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/9c2378b616345d75f365fc57ecae0bd9569760fb/images/installation_riscv_toolchain.png)
 
+![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/9c2378b616345d75f365fc57ecae0bd9569760fb/images/terminal_setup_proof.png)
+
+## Confirmation for usage of Github codespace Environment:
+* Below image shoew the details regaring the usage of codespace.
+![](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/9c2378b616345d75f365fc57ecae0bd9569760fb/images/codespace_usage_proof.png)
 ## 🏗 System Understanding
 
 During this task, the following architectural concepts were analyzed:
@@ -143,18 +155,4 @@ This confirmed full control over the build and execution pipeline.
 
 ---
 
-## 📌 Environment Confirmation
 
-✔ GitHub Codespace used for execution
-✔ Local environment preparation initiated (Dockerfile reviewed for tool requirements)
-
----
-
-Successful completion confirms readiness for upcoming:
-
-* RTL modifications
-* Custom IP integration
-* FPGA bring-up tasks
-* SoC-level development
-
-Tell me what style you want 🚀
