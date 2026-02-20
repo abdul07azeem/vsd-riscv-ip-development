@@ -50,7 +50,14 @@ Reference repository:
 
 * Forked the official `vsd-riscv2` repository
 * Launched GitHub Codespace from fork
-* Verified successful container build
+* Verified the setup using the commands
+
+'''riscv64-unknown-elf-gcc --version
+spike --version
+iverilog -V'''
+![Screenshot for verification](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/84c699795e6dd21253bf277039282b4d9cd1fe07/images/Setup_verification.png)
+
+
 
 This ensured a known-good, reproducible development baseline.
 
