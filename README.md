@@ -32,7 +32,7 @@ This is **not yet an FPGA programming task**. It is a foundation-building exerci
 ## 🛠 Environment Used
 
 * GitHub Codespaces (Primary environment)
-* Ubuntu-based container
+* VS Code
 * GNU Make
 * RISC-V GCC Toolchain
 * Linux build environment
@@ -46,20 +46,18 @@ Reference repository:
 
 ## 🔄 Execution Flow Validated
 
-### Step 1 — Codespace Setup
+### Step 1 —  Github Codespace Setup
 
 * Forked the official `vsd-riscv2` repository
-* Launched GitHub Codespace from fork
+* Launched GitHub Codespace from fork in VS Code Desktop Environment
 * Verified the setup using the commands
 
-'''riscv64-unknown-elf-gcc --version
+<pre>riscv64-unknown-elf-gcc --version
 spike --version
-iverilog -V'''
+iverilog -V </pre>
 ![Screenshot for verification](https://github.com/abdul07azeem/vsd-riscv-ip-development/blob/84c699795e6dd21253bf277039282b4d9cd1fe07/images/Setup_verification.png)
-
-
-
-This ensured a known-good, reproducible development baseline.
+* The codespace is build without successfully any errors ans issues.
+* This ensured a known-good, reproducible development baseline.
 
 ---
 
@@ -75,7 +73,7 @@ This confirmed:
 * Working toolchain
 * Correct compilation flow
 * Proper runtime behavior
-
+![]()
 ---
 
 ### Step 3 — VSDFPGA Labs Integration
