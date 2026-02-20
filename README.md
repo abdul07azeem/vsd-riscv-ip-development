@@ -1,4 +1,4 @@
-# VSD-RISCV-IP-DEVELOPMENT
+# VSD-Squadron-FPGA-Mini-RISCV-Development
 
 # 🚀 Task-1: Environment Setup & RISC-V Reference Bring-Up
 
@@ -21,11 +21,11 @@ This is **not yet an FPGA programming task**. It is a foundation-building exerci
 
 ## 🧠 Task Objectives
 
-✔ Set up official GitHub Codespace environment
-✔ Build and run RISC-V reference design
-✔ Clone and validate VSDFPGA labs
-✔ Understand system architecture and execution flow
-✔ Prepare for future FPGA and IP integration tasks
+ ✔ Set up official GitHub Codespace environment<br>
+ ✔ Build and run RISC-V reference design<br>
+ ✔ Clone and validate VSDFPGA labs<br>
+ ✔ Understand system architecture and execution flow<br>
+ ✔ Prepare for future FPGA and IP integration tasks<br>
 
 ---
 
@@ -33,7 +33,6 @@ This is **not yet an FPGA programming task**. It is a foundation-building exerci
 
 * GitHub Codespaces (Primary environment)
 * VS Code
-* GNU Make
 * RISC-V GCC Toolchain
 * Linux build environment
 
@@ -127,21 +126,22 @@ During this task, the following architectural concepts were analyzed:
 
 * Location of RISC-V firmware in repository
 * Compilation and linking flow
-* Memory loading process
-* Memory-mapped IO interaction
 * Logical integration point for new FPGA IP blocks
 
 This ensures readiness for future RTL/IP integration tasks.
 
 ---
 
+## Understanding Important Concepts
+
+### 1. Where is the RISC-V program located in the vsd-riscv2 repository?
+
+
 ## 🎯 Key Learning Outcomes
 
 * Industry-style environment onboarding
 * Toolchain validation before modification
 * Understanding before implementation
-* Structured system-level debugging
-* Controlled, reproducible development workflow
 
 ---
 
